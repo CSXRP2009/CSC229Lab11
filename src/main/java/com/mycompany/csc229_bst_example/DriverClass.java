@@ -24,7 +24,17 @@ public class DriverClass {
         System.out.println("\n-------------------");
         System.out.println("In Order Traversal");
         bst.inOrderTraversal();
-        
+        System.out.println("\n-------------------");
+        System.out.println("Pre Order Traversal");
+        bst.preOrderTraversal();
         bst.print();
+        System.out.println("\n-------------------");
+        System.out.println("Height: " + bst.findHeight());
+        System.out.println("\n-------------------");
+        System.out.println("Depth is: " + bst.getDepth(new BstNode(6)));
+        System.out.println("Depth is: " + bst.getDepth(new BstNode(7)));
+        System.out.println("Depth is: " + bst.getDepth(new BstNode(1)));
+        System.out.println("Depth is: " + bst.getDepth(new BstNode(3)));
+        System.out.println("Depth is: " + bst.getDepth(new BstNode(13)));
     }
 }
